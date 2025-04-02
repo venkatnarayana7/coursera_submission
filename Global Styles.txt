@@ -1,0 +1,72 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Section Boxes */
+.box {
+    border: 1px solid black;
+    background-color: lightgray;
+    padding: 50px 20px 20px;
+    position: relative;
+    text-align: left;
+    margin: 10px;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+/* Responsive Layout */
+/* Desktop (≥992px): All sections in one row */
+@media (min-width: 992px) {
+    .box {
+        width: 30%;
+    }
+}
+
+/* Tablet (768px–991px): 2 in one row, 1 below */
+@media (min-width: 768px) and (max-width: 991px) {
+    .box {
+        width: 45%;
+    }
+    .box3 {
+        width: 95%;
+    }
+}
+
+/* Mobile (≤767px): Each section takes full width */
+@media (max-width: 767px) {
+    .box {
+        width: 95%;
+    }
+}
